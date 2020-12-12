@@ -18,10 +18,10 @@ function checkWinner(thisStoneColor, board, rowIndex, colIndex,) {
         x = negativeHolderX * (Math.abs(x) + 1);
         y = negativeHolderY * (Math.abs(y) + 1);
       }
-      x = -x;
-      y = -y;
+      x = -negativeHolderX;
+      y = -negativeHolderY;
     }
-    if (counter === 4) return thisStoneColor;
+    if (counter >= 4) return thisStoneColor;
   }
   return;
 }

@@ -7,6 +7,7 @@ const Intersection = styled.div`
   margin: 0;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   &:before {
     content: "";
     position: absolute;

@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   }
   h1 {
     font-family: Courier,monospace;
+    margin: 15px;
     padding: 5px;
     display: inline-block; 
     vertical-align: middle;
