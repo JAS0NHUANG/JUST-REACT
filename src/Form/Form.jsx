@@ -1,16 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
 import GlobalStyle from './constants/GlobalStyle';
-import Board from './components/Board';
+import FormWrapper from './components/FormWrapper';
 
-function Gomoku() {
+function Form() {
   return (
     <div>
       <GlobalStyle />
-      <h1>React Gomoku</h1>
-      <Board />
+      <FormWrapper />
     </div>
   );
 }
 
-export default Gomoku;
+export default Form;

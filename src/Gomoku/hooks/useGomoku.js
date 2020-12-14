@@ -42,13 +42,14 @@ export default function useGomoku() {
     }
     setRecords(() => {
       let newRecords = JSON.parse(JSON.stringify(records.slice(0, step)))
-      return [...newRecords, {step, thisStoneColor, board }]
+      return [...newRecords, {step, thisStoneColor, board, winner }]
     });
   }, [board]);
 
   function handleRewind(event) {
+    console.log(records)
     const indexValue = event.target.value;
-    winner = null;
+    winner = records[indexValue].winner;
     setBoard(records[indexValue].board);
     thisStoneColor = records[indexValue].thisStoneColor;
   }

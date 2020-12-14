@@ -8,7 +8,7 @@ const BoardWrapper = styled.div`
   width: 570px;
   height: 570px;
   margin: auto;
-  background: #d3e5e7;
+  background: #dddedf;
   box-sizing: content-box;
   border: solid 2px #a4b5b9;
 `;

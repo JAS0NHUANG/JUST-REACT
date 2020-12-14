@@ -5,9 +5,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     text-align: center;
     box-sizing: border-box;
+    font-family: Courier,monospace;
   }
   h1 {
-    font-family: Courier,monospace;
     margin: 15px;
     padding: 5px;
     display: inline-block;

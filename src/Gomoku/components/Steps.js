@@ -25,7 +25,7 @@ const StepsSection = styled.div`
   button {
     cursor: pointer;
     color: #012345;
-    background: #d3e5e7;
+    background: #dddedf;
     border: none;
     width: 48px;
     padding: 8px;

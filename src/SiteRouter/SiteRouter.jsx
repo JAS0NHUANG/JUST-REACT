@@ -3,7 +3,7 @@ import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import T0D0 from '../T0D0';
 import Gomoku from '../Gomoku';
-// import Form from '../Form';
+import Form from '../Form';
 
 function SiteRouter() {
   return (
@@ -14,6 +14,9 @@ function SiteRouter() {
         </Route>
         <Route path="/Gomoku">
           <Gomoku />
+        </Route>
+        <Route path="/Form">
+          <Form />
         </Route>
       </Switch>
     </Router>
