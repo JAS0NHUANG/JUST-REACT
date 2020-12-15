@@ -25,6 +25,22 @@ const FormBody = styled.form`
   }
 `
 
+const FormButton = styled.button`
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #233437;
+  background: #dddedf;
+  transition: all 0.3s ease-in-out;
+  :hover {
+    color: #deefff;
+    background: #444548;
+  }
+`
+
 export default function FormWrapper() {
   const { userInputs, handleInput, handleSubmit, handleOnBlur } = useForm()
   return (
@@ -72,7 +88,7 @@ export default function FormWrapper() {
         userInputs={userInputs}
         handleInput={handleInput}
       />
-      <button>Submit</button>
+      <FormButton>Submit</FormButton>
     </FormBody>
   )
 }

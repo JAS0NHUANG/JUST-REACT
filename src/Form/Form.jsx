@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import GlobalStyle from './constants/GlobalStyle';
+import GlobalStyle from '../constants/GlobalStyle';
 import FormWrapper from './components/FormWrapper';
 
 function Form() {

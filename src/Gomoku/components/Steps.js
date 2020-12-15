@@ -23,18 +23,19 @@ const StepsSection = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   button {
+    font-size: 18px;
     cursor: pointer;
     color: #012345;
     background: #dddedf;
     border: none;
-    width: 48px;
+    width: 64px;
     padding: 8px;
     margin: 5px;
   }
 `
 
 const EmptyDiv = styled.div`
-  width: 48px;
+  width: 64px;
   padding: 8px;
   margin: 5px;
 `

@@ -14,6 +14,7 @@ const BoardWrapper = styled.div`
 `;
 
 const Row = styled.div`
+  font-family: Sans;
   margin-bottom: -4px;
 `;
 

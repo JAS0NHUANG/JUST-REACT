@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import GlobalStyle from './constants/GlobalStyle';
+import GlobalStyle from '../constants/GlobalStyle';
 import T0d0Header from './components/T0d0Header';
 import T0d0Item from './components/T0d0Item';
 import T0d0Form from './components/T0d0Form';
@@ -9,9 +9,10 @@ import {
   MEDIA_QUERY_S,
   MEDIA_QUERY_M,
   MEDIA_QUERY_L
-}                   from './constants/Breakpoint'
+}                   from '../constants/Breakpoint'
 
 const Main = styled.main`
+  font-size: 20px;
   margin: 0;
   background: #eee;
   min-height: 450px;

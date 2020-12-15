@@ -4,7 +4,7 @@ import {
   MEDIA_QUERY_S,
   MEDIA_QUERY_M,
   MEDIA_QUERY_L,
-} from "../constants/Breakpoint";
+} from "../../constants/Breakpoint";
 
 const T0d0HeaderWrapper = styled.div`
   border-bottom: solid 2px #121212;

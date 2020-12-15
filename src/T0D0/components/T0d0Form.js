@@ -9,6 +9,7 @@ const T0d0FormStyled = styled.form`
 `;
 
 const T0d0Input = styled.input`
+  font-size: 20px;
   margin-top: 8px;
   text-align: left;
   color: #efefef;
