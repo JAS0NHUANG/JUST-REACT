@@ -33,7 +33,7 @@ const Intersection = styled.div`
 
 const BlueStone = styled.div`
   border-radius: 50%;
-  background: radial-gradient(farthest-corner at 10px 10px, #00238b, #67cdf6);
+  background: radial-gradient(farthest-corner at 6px 6px, #89edf6, #00137b);
   position: relative;
   z-index: 3;
   width: 26px;
@@ -45,7 +45,7 @@ const BlueStone = styled.div`
 const GreenStone = styled.div`
   border-radius: 50%;
   border: none;
-  background: radial-gradient(farthest-corner at 10px 10px, #006323, #7ae68c);
+  background: radial-gradient(farthest-corner at 6px 6px, #7be88c, #006323);
   position: relative;
   z-index: 3;
   width: 26px;
