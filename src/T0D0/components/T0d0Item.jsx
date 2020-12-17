@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const T0d0Wrapper = styled.div`
   margin-top: 8px;
@@ -17,8 +17,9 @@ const T0d0Wrapper = styled.div`
 const T0d0Checkbox = styled.div`
   cursor: pointer;
   min-width: 60px;
-  ${(props) => props.isDone
-    && `
+  ${(props) =>
+    props.isDone &&
+    `
     color: #ccc;
   `}
 `;
@@ -28,8 +29,9 @@ const T0d0Content = styled.div`
   flex-shrink: 1;
   word-wrap: anywhere;
   white-space: pre-wrap;
-  ${(props) => props.isDone
-    && `
+  ${(props) =>
+    props.isDone &&
+    `
     text-decoration: line-through;
     color: #ccc;
   `}
@@ -61,7 +63,7 @@ export default function T0d0Item({
   handleToggleIsDone,
   handleInput,
   handleEditing,
-  handleEditSubmit
+  handleEditSubmit,
 }) {
   const handleIsDoneClick = () => {
     handleToggleIsDone(t0d0.t0d0Id);
@@ -78,7 +80,7 @@ export default function T0d0Item({
   return (
     <T0d0Wrapper t0d0Id={t0d0.t0d0Id}>
       <T0d0Checkbox onClick={handleIsDoneClick} isDone={t0d0.isDone}>
-        -[{t0d0.isDone ? 'V' : ' '}]
+        -[{t0d0.isDone ? "V" : " "}]
       </T0d0Checkbox>
       {!t0d0.isEditing ? (
         <T0d0Content isDone={t0d0.isDone} onClick={handleContentClick}>
@@ -96,9 +98,7 @@ export default function T0d0Item({
           />
         </T0d0ContentEdit>
       )}
-      <T0d0Delete onClick={handleDeleteClick}>
-        X
-      </T0d0Delete>
+      <T0d0Delete onClick={handleDeleteClick}>X</T0d0Delete>
     </T0d0Wrapper>
   );
 }

@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Intersection = styled.div`
   position: relative;
@@ -60,9 +61,27 @@ export default function Stone({
   colIndex,
 }) {
   return (
-    <Intersection onClick={() => { handlePlaceStone(rowIndex, colIndex); }}>
-      { (stoneColor === 'green') && <GreenStone /> }
-      { (stoneColor === 'blue') && <BlueStone /> }
+    <Intersection
+      onClick={() => {
+        handlePlaceStone(rowIndex, colIndex);
+      }}
+    >
+      {stoneColor === "green" && <GreenStone />}
+      {stoneColor === "blue" && <BlueStone />}
     </Intersection>
   );
 }
+
+Stone.propTypes = {
+  stoneColor: PropTypes.string,
+  handlePlaceStone: PropTypes.func,
+  rowIndex: PropTypes.number,
+  colIndex: PropTypes.number,
+};
+
+Stone.defaultProps = {
+  stoneColor: null,
+  handlePlaceStone: null,
+  rowIndex: null,
+  colIndex: null,
+};

@@ -1,11 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import {
-  FormText,
-  FormEmail,
-  FormRadio
-} from './FormInputs'
-import useForm from '../hooks/useForm'
+import React from "react";
+import styled from "styled-components";
+import { FormText, FormRadio } from "./FormInputs";
+import useForm from "../hooks/useForm";
 
 const FormBody = styled.form`
   text-align: left;
@@ -23,7 +19,7 @@ const FormBody = styled.form`
       color: #ef2334;
     }
   }
-`
+`;
 
 const FormButton = styled.button`
   font-size: 18px;
@@ -39,44 +35,47 @@ const FormButton = styled.button`
     color: #deefff;
     background: #444548;
   }
-`
+`;
 
 export default function FormWrapper() {
-  const { userInputs, handleInput, handleSubmit, handleOnBlur } = useForm()
+  const { userInputs, handleInput, handleSubmit, handleOnBlur } = useForm();
   return (
     <FormBody action="" onSubmit={handleSubmit}>
       <h1>React Form</h1>
       <p>Event Date：2077/12/32 ~ 2078/12/33</p>
       <p>Event Location： Pandora</p>
-      <p><span>* Required</span></p>
+      <p>
+        <span>* Required</span>
+      </p>
       <FormText
-        isRequired={true}
+        isRequired
         name="nickname"
         userInputs={userInputs}
         handleInput={handleInput}
         handleOnBlur={handleOnBlur}
       />
-      <FormEmail
-        isRequired={true}
+      <FormText
+        isRequired
+        name="email"
         userInputs={userInputs}
         handleInput={handleInput}
         handleOnBlur={handleOnBlur}
       />
       <FormText
-        isRequired={true}
+        isRequired
         name="phone"
         userInputs={userInputs}
         handleInput={handleInput}
         handleOnBlur={handleOnBlur}
       />
       <FormRadio
-        isRequired={true}
+        isRequired
         userInputs={userInputs}
         handleInput={handleInput}
         handleOnBlur={handleOnBlur}
       />
       <FormText
-        isRequired={true}
+        isRequired
         name="how"
         userInputs={userInputs}
         handleInput={handleInput}
@@ -90,5 +89,5 @@ export default function FormWrapper() {
       />
       <FormButton>Submit</FormButton>
     </FormBody>
-  )
+  );
 }

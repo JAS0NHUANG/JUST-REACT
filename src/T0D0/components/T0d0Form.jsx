@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const T0d0FormStyled = styled.form`
   margin-top: 8px;
@@ -33,3 +34,15 @@ export default function T0d0Form({ value, handleSubmit, handleInput }) {
     </T0d0FormStyled>
   );
 }
+
+T0d0Form.propTypes = {
+  value: PropTypes.string,
+  handleSubmit: PropTypes.func,
+  handleInput: PropTypes.func,
+};
+
+T0d0Form.defaultProps = {
+  value: null,
+  handleSubmit: null,
+  handleInput: null,
+};

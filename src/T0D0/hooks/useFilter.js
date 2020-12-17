@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 export default function useFilter() {
-  const [filter, setFilter] = useState("ALL")
+  const [filter, setFilter] = useState('ALL');
 
   function handleFilter(filterClicked) {
-    setFilter(filterClicked)
+    setFilter(filterClicked);
   }
 
-  return { filter, handleFilter }
+  return { filter, handleFilter };
 }

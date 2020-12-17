@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components'
-import GlobalStyle from '../constants/GlobalStyle';
-import Board from './components/Board';
+import React from "react";
+import styled from "styled-components";
+import GlobalStyle from "../constants/GlobalStyle";
+import Board from "./components/Board";
 
 function Gomoku() {
   return (

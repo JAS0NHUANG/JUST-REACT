@@ -19,6 +19,8 @@ const T0d0HeaderWrapper = styled.div`
 const T0d0Title = styled.div`
   height: 100%;
   min-width: 78px;
+  font-weight: bold;
+  font-size: 24px;
   ${MEDIA_QUERY_S} {
     margin-left: 20px;
   }
@@ -98,7 +100,7 @@ export default function T0d0Header({
 }) {
   return (
     <T0d0HeaderWrapper>
-      <T0d0Title># T0D0</T0d0Title>
+      <T0d0Title>#T0D0</T0d0Title>
       <nav>
         <T0d0NavUl>
           <T0d0NavItem
